@@ -113,6 +113,6 @@ function sair(){
   if(alert){
   localStorage.removeItem('token')
   localStorage.removeItem('userLogado')
-  window.location.href = '../html/login.html'
+  window.location.href = '../assets/html/login.html'
   }
 }
