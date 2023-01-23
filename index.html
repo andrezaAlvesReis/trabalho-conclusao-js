@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RECADOS</title>
+    <link rel="stylesheet" href="./assets/css/index.css">
+    <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+    <section class="container">
+        <section class="header">
+          <h1>Meus Recados</h1>
+          <button onclick="openModal()" id="new">Incluir novo Recado</i></button>
+          
+          <section class="sair">
+            <button class="button-sair" onclick="sair()">Sair</button>
+          </section>
+          
+        </section>
+    
+        <section class="divTable">
+          <table>
+            <thead>
+              <tr>
+                <th>Nome</th>
+                <th>Recado/Lembrete</th>
+                <th>Pix para enviar</th>
+                <th class="acao">Editar</th>
+                <th class="acao">Excluir</th>
+              </tr>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </section>
+    
+        <section class="modal-container">
+          <section class="modal">
+            <form>
+              <label for="m-nome">Nome</label>
+              <input id="m-nome" type="text" required />
+      
+              <label for="m-recado">Recado</label>
+              <input id="m-recado" type="text" required />
+      
+              <label for="m-pix">Pix para enviar</label>
+              <input id="m-pix" type="number" required />
+              <button id="btnSalvar">Salvar</button>
+            </form>
+          </section>
+        </section>
+      
+        
+    
+      </section>
+
+
+    
+    
+    <h1 id='logado'> </h1>
+  
+    <button onclick='sair()' > Sair </button>
+
+<script src="./assets/js/index.js"></script>
+</body>
+</html>
